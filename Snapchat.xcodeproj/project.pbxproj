@@ -10,6 +10,7 @@
 		600926B71D7A17AD00665C59 /* SnapsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600926B61D7A17AD00665C59 /* SnapsVC.swift */; };
 		600926B91D7A1A3100665C59 /* PictureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600926B81D7A1A3100665C59 /* PictureVC.swift */; };
 		600926BB1D7A23D000665C59 /* SelectUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600926BA1D7A23D000665C59 /* SelectUserVC.swift */; };
+		600926BD1D7A28E500665C59 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600926BC1D7A28E500665C59 /* User.swift */; };
 		603548741D79F79600E6DECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603548731D79F79600E6DECB /* AppDelegate.swift */; };
 		603548761D79F79600E6DECB /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603548751D79F79600E6DECB /* SignInVC.swift */; };
 		603548791D79F79600E6DECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 603548771D79F79600E6DECB /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		600926B61D7A17AD00665C59 /* SnapsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapsVC.swift; sourceTree = "<group>"; };
 		600926B81D7A1A3100665C59 /* PictureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureVC.swift; sourceTree = "<group>"; };
 		600926BA1D7A23D000665C59 /* SelectUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserVC.swift; sourceTree = "<group>"; };
+		600926BC1D7A28E500665C59 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		603548701D79F79600E6DECB /* Snapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		603548731D79F79600E6DECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		603548751D79F79600E6DECB /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -57,6 +59,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		600926BE1D7A28FF00665C59 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				603548751D79F79600E6DECB /* SignInVC.swift */,
+				600926B61D7A17AD00665C59 /* SnapsVC.swift */,
+				600926B81D7A1A3100665C59 /* PictureVC.swift */,
+				600926BA1D7A23D000665C59 /* SelectUserVC.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		600926BF1D7A291300665C59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				600926BC1D7A28E500665C59 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		603548671D79F79600E6DECB = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +99,8 @@
 		603548721D79F79600E6DECB /* Snapchat */ = {
 			isa = PBXGroup;
 			children = (
+				600926BF1D7A291300665C59 /* Model */,
+				600926BE1D7A28FF00665C59 /* View */,
 				600926B51D7A16C200665C59 /* Snapchat.entitlements */,
 				603548851D79F9D700E6DECB /* GoogleService-Info.plist */,
 				603548731D79F79600E6DECB /* AppDelegate.swift */,
@@ -85,10 +108,6 @@
 				6035487A1D79F79600E6DECB /* Assets.xcassets */,
 				6035487C1D79F79600E6DECB /* LaunchScreen.storyboard */,
 				6035487F1D79F79600E6DECB /* Info.plist */,
-				603548751D79F79600E6DECB /* SignInVC.swift */,
-				600926B61D7A17AD00665C59 /* SnapsVC.swift */,
-				600926B81D7A1A3100665C59 /* PictureVC.swift */,
-				600926BA1D7A23D000665C59 /* SelectUserVC.swift */,
 			);
 			path = Snapchat;
 			sourceTree = "<group>";
@@ -234,6 +253,7 @@
 			files = (
 				603548761D79F79600E6DECB /* SignInVC.swift in Sources */,
 				603548741D79F79600E6DECB /* AppDelegate.swift in Sources */,
+				600926BD1D7A28E500665C59 /* User.swift in Sources */,
 				600926B71D7A17AD00665C59 /* SnapsVC.swift in Sources */,
 				600926BB1D7A23D000665C59 /* SelectUserVC.swift in Sources */,
 				600926B91D7A1A3100665C59 /* PictureVC.swift in Sources */,
