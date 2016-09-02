@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		600926B71D7A17AD00665C59 /* SnapsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600926B61D7A17AD00665C59 /* SnapsVC.swift */; };
+		600926B91D7A1A3100665C59 /* PictureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600926B81D7A1A3100665C59 /* PictureVC.swift */; };
+		600926BB1D7A23D000665C59 /* SelectUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600926BA1D7A23D000665C59 /* SelectUserVC.swift */; };
 		603548741D79F79600E6DECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603548731D79F79600E6DECB /* AppDelegate.swift */; };
 		603548761D79F79600E6DECB /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603548751D79F79600E6DECB /* SignInVC.swift */; };
 		603548791D79F79600E6DECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 603548771D79F79600E6DECB /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		600926B51D7A16C200665C59 /* Snapchat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Snapchat.entitlements; sourceTree = "<group>"; };
 		600926B61D7A17AD00665C59 /* SnapsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapsVC.swift; sourceTree = "<group>"; };
+		600926B81D7A1A3100665C59 /* PictureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureVC.swift; sourceTree = "<group>"; };
+		600926BA1D7A23D000665C59 /* SelectUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserVC.swift; sourceTree = "<group>"; };
 		603548701D79F79600E6DECB /* Snapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		603548731D79F79600E6DECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		603548751D79F79600E6DECB /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				6035487C1D79F79600E6DECB /* LaunchScreen.storyboard */,
 				6035487F1D79F79600E6DECB /* Info.plist */,
 				600926B61D7A17AD00665C59 /* SnapsVC.swift */,
+				600926B81D7A1A3100665C59 /* PictureVC.swift */,
+				600926BA1D7A23D000665C59 /* SelectUserVC.swift */,
 			);
 			path = Snapchat;
 			sourceTree = "<group>";
@@ -229,6 +235,8 @@
 				603548761D79F79600E6DECB /* SignInVC.swift in Sources */,
 				603548741D79F79600E6DECB /* AppDelegate.swift in Sources */,
 				600926B71D7A17AD00665C59 /* SnapsVC.swift in Sources */,
+				600926BB1D7A23D000665C59 /* SelectUserVC.swift in Sources */,
+				600926B91D7A1A3100665C59 /* PictureVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
