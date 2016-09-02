@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SnapsVC.swift
 //  Snapchat
 //
 //  Created by Mago Nicolas Palacios on 9/2/16.
@@ -8,15 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SnapsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
+        // Do any additional setup after loading the view.
+    }
+
+    @IBAction func logout(_ sender: AnyObject)
+    {
+        dismiss(animated: true, completion: nil)
     }
 
 
-
 }
-
