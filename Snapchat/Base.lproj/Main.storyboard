@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -109,11 +110,51 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="a2d-ic-Gr7" id="7t1-sJ-djV"/>
+                        <segue destination="cuL-mM-qDQ" kind="show" identifier="viewSnapSegue" id="KFW-Cz-Q7o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gIH-fa-9Ym" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1653.5999999999999" y="138.98050974512745"/>
+        </scene>
+        <!--View SnapVC-->
+        <scene sceneID="ZiN-H4-7zR">
+            <objects>
+                <viewController id="cuL-mM-qDQ" customClass="ViewSnapVC" customModule="Snapchat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fN8-2q-oDR"/>
+                        <viewControllerLayoutGuide type="bottom" id="fZx-Pc-Yt8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p3A-Nd-TFi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is me sating Hello!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mX-Yq-mOd">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xj2-PC-sfT"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="4mX-Yq-mOd" secondAttribute="trailing" constant="5" id="1Mr-c4-9B5"/>
+                            <constraint firstItem="4mX-Yq-mOd" firstAttribute="leading" secondItem="p3A-Nd-TFi" secondAttribute="leadingMargin" constant="5" id="7uQ-uM-8Sn"/>
+                            <constraint firstItem="4mX-Yq-mOd" firstAttribute="top" secondItem="xj2-PC-sfT" secondAttribute="bottom" constant="10" id="BJS-Nn-Bnz"/>
+                            <constraint firstItem="xj2-PC-sfT" firstAttribute="top" secondItem="fN8-2q-oDR" secondAttribute="bottom" constant="10" id="T0b-U8-hZe"/>
+                            <constraint firstItem="fZx-Pc-Yt8" firstAttribute="top" secondItem="4mX-Yq-mOd" secondAttribute="bottom" constant="10" id="TPw-PN-ynL"/>
+                            <constraint firstItem="xj2-PC-sfT" firstAttribute="leading" secondItem="p3A-Nd-TFi" secondAttribute="leadingMargin" constant="10" id="UWy-Zt-BTw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xj2-PC-sfT" secondAttribute="trailing" constant="10" id="i6O-cq-Kh7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="xj2-PC-sfT" id="ndw-HY-fGq"/>
+                        <outlet property="label" destination="4mX-Yq-mOd" id="HoK-HC-gpD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hKl-7b-BFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1654" y="910"/>
         </scene>
         <!--PictureVC-->
         <scene sceneID="sWX-yI-Wlr">

@@ -17,9 +17,12 @@ class PictureVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     
     var imagePicker = UIImagePickerController()
     
+    var uuid = NSUUID().uuidString
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
+        nextButton.isEnabled = false
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -29,12 +32,15 @@ class PictureVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         
         imageView.backgroundColor = UIColor.clear
         
+        nextButton.isEnabled = true
+        
         imagePicker.dismiss(animated: true, completion: nil)
     }
 
     @IBAction func cameraTapped(_ sender: AnyObject) {
         
         imagePicker.sourceType = .savedPhotosAlbum
+        //imagePicker.sourceType = .camera // Este es para usarlo en Device
         imagePicker.allowsEditing = false
         present(imagePicker, animated: true, completion: nil)
     }
@@ -49,7 +55,7 @@ class PictureVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         
         
         
-        imagesFolder.child("\(NSUUID().uuidString).jpg").put(imageData, metadata: nil, completion: { (metadata, error) in
+        imagesFolder.child("\(uuid).jpg").put(imageData, metadata: nil, completion: { (metadata, error) in
             
             if error != nil {
                 print("We Had an Error: \(error)")
@@ -70,5 +76,6 @@ class PictureVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         let nextVC = segue.destination as! SelectUserVC
         nextVC.imageURL = sender as! String
         nextVC.descrip = descriptionTextField.text!
+        nextVC.uuid = uuid
     }
 }
